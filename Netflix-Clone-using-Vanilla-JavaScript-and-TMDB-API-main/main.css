@@ -1,0 +1,196 @@
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Netflix Sans', sans-serif;
+	background-color: #111;
+}
+
+.card-body {
+	color: white !important;
+}
+::-webkit-scrollbar {
+	width: 7px;
+	background-color: #111;
+}
+::-webkit-scrollbar-thumb {
+	background-color: white;
+	border-radius: 10px;
+}
+.nav {
+	position: fixed;
+	top: 0;
+	padding: 20px 40px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1;
+	transition-timing-function: ease-in;
+	transition: all 0.5s;
+}
+.nav.active {
+	background-color: #111;
+}
+.nav__left {
+	margin-left: 10px;
+}
+.nav_logo {
+	width: 120px;
+}
+.nav__right {
+	position: fixed;
+	right: 20px;
+	display: flex;
+	margin-right: 10px;
+}
+.nav_avatar {
+	width: 35px;
+}
+#banner {
+	color: white;
+	object-fit: contain;
+	height: 844px;
+	background-position: center center;
+	background-size: cover;
+	background-image: url('https://cdn.wallpapersafari.com/33/50/KoLcXR.jpg');
+}
+#banner__contents {
+	margin-left: 70px;
+	padding-top: 540px;
+	height: 190px;
+}
+#banner__title {
+	font-size: 3rem;
+	font-weight: 800;
+	padding-bottom: 0.3rem;
+}
+#banner__description {
+	width: 45rem;
+	line-height: 1.5;
+	padding-top: 1rem;
+	font-size: 0.9rem;
+	max-width: 360px;
+	height: 80px;
+}
+#banner__button {
+	cursor: pointer;
+	color: white;
+	outline: none;
+	border: none;
+	font-weight: 700;
+	border-radius: 0.2vw;
+	padding-left: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-right: 2rem;
+	margin-right: 1rem;
+	padding-top: 0.5rem;
+	background-color: rgba(51, 51, 51, 0.5);
+	padding-bottom: 0.5rem;
+}
+#banner__button:hover {
+	color: black;
+	background-color: #e6e6e6;
+	transition: all 0.3s;
+}
+#banner__fadeBottom {
+	height: 7.4rem;
+	background: linear-gradient(
+		180deg,
+		transparent,
+		rgba(37, 37, 37, 0.61),
+		#111
+	);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background-color: #000;
+}
+
+h1 {
+	font-family: Arial;
+	color: red;
+	text-align: center;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 100%);
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+.wrapper section {
+	width: 100%;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	margin: 20px 0;
+}
+.wrapper section .item {
+	padding: 0 2px;
+	transition: 250ms all;
+}
+.wrapper section .item:hover {
+	margin: 0 40px;
+	transform: scale(1.2);
+}
+.wrapper section a {
+	position: absolute;
+	color: #fff;
+	text-decoration: none;
+	font-size: 6em;
+	background: black;
+	width: 80px;
+	padding: 20px;
+	text-align: center;
+	z-index: 1;
+}
+.wrapper section a:nth-of-type(1) {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+.wrapper section a:nth-of-type(2) {
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+@media only screen and (max-width: 600px) {
+	a.arrow__btn {
+		display: none;
+	}
+}
+.card {
+	transform: scale(1.02);
+	transition: all 0.3s;
+}
+.card:hover {
+	transform: scale(1.3);
+	transition: all 0.3s;
+}
+
+.card img {
+	width: 200px;
+	height: 200px;
+}
+.product-wrapper,
+.product-drama,
+.product-trending {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
